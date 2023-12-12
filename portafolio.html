@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#about">Sobre Mí</a>
+            <a href="#portfolio">Mi Portafolio</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>JORGE MAMANI ESCOBEDO</h1>
+            <p>Desarrollador Web/Backend</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <div class="description">
+                    <p>Hola, soy Jorge Mamani Escobedo, un apasionado programador backend con una sólida experiencia en proyectos personales. Mi enfoque va más allá del simple código; me esfuerzo por crear soluciones robustas y eficientes que impulsen la funcionalidad y el rendimiento.</p>
+                    <p>A lo largo de mi trayectoria, he liderado diversos proyectos personales que han ampliado mi perspectiva y conocimientos. Mi objetivo es seguir creciendo como profesional, aportando mi experiencia y pasión por la programación backend a cada proyecto.</p>
+                    <p>¡Estoy entusiasmado por desafíos nuevos y emocionantes que me permitan seguir aprendiendo y evolucionando en este fascinante mundo del desarrollo de software!</p>
+                </div>
+                <div class="buttons">
+                    <a href="#portfolio" class="btn primary">Ver Portafolio</a>
+                    <a href="tu-cv.pdf" target="_blank" class="btn tertiary">Ver Currículum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portafolio</h2>
+    
+            <div class="carousel-container">
+                <div class="projects">
+                    <div class="project" id="project1">
+                        <div class="project-content">
+                            <img src="project1.jpg" alt="Proyecto 1 Imagen" class="project-img">
+                            <div class="project-info">
+                                <h3>Juego de Avión y Misiles</h3>
+                                <p>Descripción del Proyecto:                                                       
+                                    Bienvenido al emocionante mundo de mi juego de avión y misiles. En este proyecto, he creado un juego interactivo donde te pones al mando de un avión de combate equipado con potentes misiles. Tu misión es derribar aviones enemigos que caen desde arriba antes de que lleguen al suelo.
+                                    
+                                    Tecnologías Utilizadas
+                                    Este proyecto fue desarrollado utilizando JavaScript, HTML5, CSS. La combinación de estas tecnologías permitió crear una experiencia de juego fluida y visualmente atractiva.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="project" id="project2">
+                        <div class="project-content">
+                            <img src="project2.jpg" alt="Proyecto 2 Imagen" class="project-img">
+                            <div class="project-info">
+                                <h3>Ninjaman: Aventura de Comida Japonesa</h3>
+                                <p>Descripción del Proyecto: 
+                                    Bienvenido a Ninjaman, una emocionante variante del clásico juego de Pacman con un toque japonés. En este proyecto, he reinventado la experiencia del Pacman tradicional al introducir a Ninjaman, un hábil ninja que se aventura por un mundo lleno de sushi, onigiri y desafíos.
+                                    
+                                    Tecnologías Utilizadas
+                                    Este juego fue desarrollado utilizando JavaScript, HTML5, CSS. La combinación de estas tecnologías permitió crear una experiencia de juego interactiva y divertida.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Agrega más proyectos según sea necesario -->
+                </div>
+                
+                <div class="navigation">
+                    <div class="arrow prev" onclick="prevProject()">&#8249;</div>
+                    <div class="arrow next" onclick="nextProject()">&#8250;</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+    
+            <form action="tu-script-de-procesamiento.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mi Portafolio</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
